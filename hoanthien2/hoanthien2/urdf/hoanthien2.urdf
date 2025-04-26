@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="hoanthien2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00286817104929898 0.0320535087505236 0.0271879413595538"
+        rpy="0 0 0" />
+      <mass
+        value="1.99036503943959" />
+      <inertia
+        ixx="1.0"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="1.0"
+        iyz="0.0"
+        izz="1" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hoanthien2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hoanthien2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+
+    
+  </link>
+  <link
+    name="point1">
+    <inertial>
+      <origin
+        xyz="0.012170383848509 -0.000734193897271036 0.00663389125556951"
+        rpy="0 0 0" />
+      <mass
+        value="0.132869959415392" />
+      <inertia
+        ixx="1.0"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="1.0"
+        iyz="0.0"
+        izz="1.0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hoanthien2/meshes/point1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hoanthien2/meshes/point1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="join_1"
+    type="continuous">
+    <origin
+      xyz="-0.1258 0.062627 -0.025616"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="point1" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="point2">
+    <inertial>
+      <origin
+        xyz="0.0023703838485091 1.68257945659667E-05 -4.54593241776546E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.132869959415391" />
+      <inertia
+        ixx="1.0"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="1.0"
+        iyz="0.0"
+        izz="1.0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hoanthien2/meshes/point2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hoanthien2/meshes/point2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="join2"
+    type="continuous">
+    <origin
+      xyz="-0.1192 -0.063124 -0.018973"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="point2" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="point3">
+    <inertial>
+      <origin
+        xyz="-0.00237045353398613 2.98881320330013E-05 -3.35559718476763E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.132869959439886" />
+      <inertia
+        ixx="1.0"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="1.0"
+        iyz="0.0"
+        izz="1.0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hoanthien2/meshes/point3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hoanthien2/meshes/point3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="continuous">
+    <origin
+      xyz="0.11921 -0.062994 -0.019"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="point3" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="point4">
+    <inertial>
+      <origin
+        xyz="-0.0121703838485092 0.00518358872069528 0.00420451683837419"
+        rpy="0 0 0" />
+      <mass
+        value="0.132869959415391" />
+      <inertia
+        ixx="1.0"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="1.0"
+        iyz="0.0"
+        izz="1.0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hoanthien2/meshes/point4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hoanthien2/meshes/point4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="continuous">
+    <origin
+      xyz="0.129 0.056672 -0.023171"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="point4" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="tay1_Link">
+    <inertial>
+      <origin
+        xyz="0.005 -0.000750852195158469 -0.00233122622013765"
+        rpy="0 0 0" />
+      <mass
+        value="0.113350434059692" />
+      <inertia
+        ixx="1.0"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="1.0"
+        iyz="0.0"
+        izz="1.0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hoanthien2/meshes/tay1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hoanthien2/meshes/tay1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tay1_joint"
+    type="continuous">
+    <origin
+      xyz="-0.014996 -0.022926 0.15105"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="tay1_Link" />
+    <axis
+      xyz="0 0 1" />
+
+  </joint>
+  <link
+    name="tay2_Link">
+    <inertial>
+      <origin
+        xyz="0.00480763511255766 -0.00909205564187039 0.000475119050931783"
+        rpy="0 0 0" />
+      <mass
+        value="0.0528243719291935" />
+      <inertia
+        ixx="1.0"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="1.0"
+        iyz="0.0"
+        izz="1.0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hoanthien2/meshes/tay2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hoanthien2/meshes/tay2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tay2_joint"
+    type="continuous">
+    <origin
+      xyz="-0.015996 0.10684 0.23984"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="tay2_Link" />
+    <axis
+      xyz="0 0 1" />
+
+  </joint>
+  
+  <joint name="imu_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="imu_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <link name="imu_link">
+    </link>
+
+  <gazebo reference="imu_link">
+    <gravity>true</gravity>
+    <sensor name="imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <topic>imu</topic>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>imu</topicName>
+        <bodyName>imu_link</bodyName>
+        <updateRateHZ>10.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0 0 0</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>imu_link</frameName>
+        <initialOrientationAsReference>false</initialOrientationAsReference>
+      </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+
+
+ <gazebo>
+  <plugin name="omni_drive_controller" filename="libgazebo_ros_planar_move.so">
+    <commandTopic>cmd_vel</commandTopic>
+    <odometryTopic>odom</odometryTopic>
+    <odometryFrame>odom</odometryFrame>
+    <robotBaseFrame>base_link</robotBaseFrame>
+    <updateRate>100.0</updateRate>
+    <robotNamespace>/</robotNamespace>
+    <publishTf>true</publishTf>
+  </plugin>
+</gazebo>
+
+
+
+<gazebo reference="base_link">
+  <sensor name="lidar_sensor" type="ray">
+    <pose>0 0 0.1 0 0 0</pose> 
+    <visualize>true</visualize>
+    <update_rate>10</update_rate> 
+    <ray>
+      <scan>
+        <horizontal>
+          <samples>360</samples>
+          <resolution>1</resolution>
+          <min_angle>-3.14/2</min_angle> 
+          <max_angle>3.14</max_angle>  
+        </horizontal>
+      </scan>
+      <range>
+        <min>0.1</min>
+        <max>10.0</max>
+        <resolution>0.01</resolution>
+      </range>
+    </ray>
+    <plugin name="gazebo_ros_laser" filename="libgazebo_ros_laser.so">
+      <topicName>/lidar_scan</topicName>
+      <frameName>lidar_sensor</frameName>
+    </plugin>
+  </sensor>
+</gazebo>
+</robot>

@@ -1,0 +1,15 @@
+<launch>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find gazebo_ros)/worlds/empty.world"/>
+  </include>
+
+ 
+  <param name="robot_description" textfile="$(find hoanthien2)/urdf/hoanthien2.urdf" />
+
+ 
+  <node name="spawn_model" pkg="gazebo_ros" type="spawn_model"
+        args="-file $(find hoanthien2)/urdf/hoanthien2.urdf -urdf -model hoanthien2"/>
+
+ 
+  <node name="rviz" pkg="rviz" type="rviz" respawn="false"/>
+</launch>

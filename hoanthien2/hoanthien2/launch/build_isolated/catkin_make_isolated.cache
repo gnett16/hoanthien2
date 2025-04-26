@@ -1,0 +1,2 @@
+
+-G Ninja -DCATKIN_DEVEL_PREFIX=/home/gnett/catkin_ws/src/hoanthien2/hoanthien2/launch/devel_isolated -DCMAKE_INSTALL_PREFIX=/home/gnett/catkin_ws/src/hoanthien2/hoanthien2/launch/install_isolated
